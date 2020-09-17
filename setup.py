@@ -5,7 +5,7 @@ from auth_updater import VERSION
 install_requires = [
     'allianceauth>=2.7.5',
     'celery>=4.4.2,<5.0.0',
-    'django>=2.2.16,<3.0.0',  #3.0.0 not working with auth
+    'django>=2.2.16,<4.0.0',  #3.0.0 not working with auth
     'mysqlclient',
     'dnspython',
     'passlib',
