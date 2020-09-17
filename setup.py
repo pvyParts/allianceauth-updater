@@ -24,7 +24,7 @@ install_requires = [
     'django-registration==2.4',
     'django-sortedm2m',
     'django-redis-cache>=2.1.0,<3.0.0',
-    'django-celery-beat>=1.1.1,<2.0.0',
+    'django-celery-beat>=1.1.1,<3.0.0',
 
     'openfire-restapi',
     'sleekxmpp',
