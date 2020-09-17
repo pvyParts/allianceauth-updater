@@ -21,7 +21,7 @@ install_requires = [
     'celery_once',
 
     'django-bootstrap-form',
-    'django-registration==2.4',
+    'django-registration==3.1',
     'django-sortedm2m',
     'django-redis-cache>=2.1.0,<3.0.0',
     'django-celery-beat>=1.1.1,<2.0.0',
