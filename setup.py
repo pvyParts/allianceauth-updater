@@ -23,7 +23,7 @@ install_requires = [
     'django-registration==2.5.2', # incompat 3.0
     'django-sortedm2m==3.0.2',
     'django-redis-cache==2.1.1',
-    'django-celery-beat>=1.6.0', # incompat 2.0
+    'django-celery-beat==1.6.0', # incompat 2.0
 
     'django-esi==2.0.0',
     'bravado==10.6.2']
