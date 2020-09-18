@@ -26,6 +26,14 @@ install_requires = [
     'django-esi',
     'bravado']
 
+testing_extras = [
+    'coverage>=4.3.1',
+    'requests-mock>=1.2.0',
+    'django-nose',
+    'django-webtest',
+]
+
+
 this_directory = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
@@ -38,6 +46,9 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
+    extras_require={
+        'testing': testing_extras
+    },
     license='MIT',
     description='Alliance Auth Dependency update helper',
     long_description=long_description,
