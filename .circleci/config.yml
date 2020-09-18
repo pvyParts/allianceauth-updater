@@ -2,7 +2,7 @@ version: 2
 jobs:
   BuildAndTest:
     docker:
-      - image: circleci/python:3.7
+      - image: circleci/python:3.6
     steps:
       - checkout
       - restore_cache:
@@ -61,7 +61,7 @@ jobs:
             twine upload dist/*
 workflows:
   version: 2
-  CorpTools:
+  UpdateCheck:
     jobs:
       - BuildAndTest
       - Deploy:
