@@ -4,11 +4,9 @@ from auth_updater import __VERSION__
 
 install_requires = [
     #locked 
-    'django<3.0.0',  #3.0.0 not working with auth
-    'django-celery-beat<2.0.0', # incompat 2.0
-    'django-registration<3.0.0', # incompat 3.0
-
-    #unlocked
+    'django>=3.1.1',  
+    'django-celery-beat',
+    'django-registration',
     'celery',
     'gunicorn',
     'mysqlclient',
