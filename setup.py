@@ -7,7 +7,7 @@ install_requires = [
     'django>=3.1.1',  
     'django-celery-beat',
     'django-registration',
-    'celery',
+    'celery>=5.0.0rc3',
     'gunicorn',
     'mysqlclient',
     'dnspython',
