@@ -3,6 +3,7 @@ jobs:
   BuildAndTest:
     docker:
       - image: circleci/python:3.6
+      - image: redis
     steps:
       - checkout
       - restore_cache:
