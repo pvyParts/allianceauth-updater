@@ -169,7 +169,7 @@ DATABASES['default'] = {
     'ENGINE': 'django.db.backends.mysql',
     'NAME': 'test_db',
     'USER': 'user',
-    'PASSWORD': 'rootpw',
+    'PASSWORD': 'passw0rd',
     'HOST': '127.0.0.1',
     'PORT': '3306',
     'OPTIONS': {'charset': 'utf8mb4'},
