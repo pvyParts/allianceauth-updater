@@ -23,7 +23,7 @@ confusable-homoglyphs==3.2.0  # via django-registration
 django-bootstrap-form==3.4  # via allianceauth-updater (setup.py)
 django-celery-beat==2.0.0  # via allianceauth-updater (setup.py)
 django-esi==2.0.2         # via allianceauth-updater (setup.py)
-django-redis-cache==2.1.1  # via allianceauth-updater (setup.py)
+django-redis-cache==3.0.0  # via allianceauth-updater (setup.py)
 django-registration==3.1.1  # via allianceauth-updater (setup.py)
 django-sortedm2m==3.0.2   # via allianceauth-updater (setup.py)
 django-timezone-field==4.0  # via django-celery-beat
