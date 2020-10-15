@@ -35,16 +35,9 @@ jobs:
           paths:
             - "venv"
             - ".tox"
+
 workflows:
   version: 2
   UpdateCheck:
     jobs:
       - BuildAndTest
-      - Deploy:
-          requires:
-            - BuildAndTest
-          filters:
-            tags:
-              only: /[0-9]+(\.[0-9]+)*/
-            branches:
-              ignore: /.*/
