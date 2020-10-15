@@ -168,8 +168,8 @@ LOGGING = None  # Comment out to enable logging for debugging
 DATABASES['default'] = {
     'ENGINE': 'django.db.backends.mysql',
     'NAME': 'test_db',
-    'USER': 'user',
-    'PASSWORD': 'passw0rd',
+    'USER': 'root',
+    'PASSWORD': 'rootpw',
     'HOST': '127.0.0.1',
     'PORT': '3306',
     'OPTIONS': {'charset': 'utf8mb4'},
