@@ -14,7 +14,7 @@ bravado==10.6.2           # via allianceauth-updater (setup.py), django-esi
 celery-once==3.0.1        # via allianceauth-updater (setup.py)
 celery==5.0.0rc3          # via allianceauth-updater (setup.py), celery-once, django-celery-beat, django-esi
 certifi==2020.6.20        # via requests
-cffi==1.14.2              # via bcrypt
+cffi==1.14.3              # via bcrypt
 chardet==3.0.4            # via requests
 click-didyoumean==0.0.3   # via celery
 click-repl==0.1.6         # via celery
@@ -24,14 +24,14 @@ django-bootstrap-form==3.4  # via allianceauth-updater (setup.py)
 django-celery-beat==2.0.0  # via allianceauth-updater (setup.py)
 django-esi==2.0.1         # via allianceauth-updater (setup.py)
 django-redis-cache==2.1.1  # via allianceauth-updater (setup.py)
-django-registration==3.1  # via allianceauth-updater (setup.py)
+django-registration==3.1.1  # via allianceauth-updater (setup.py)
 django-sortedm2m==3.0.2   # via allianceauth-updater (setup.py)
 django-timezone-field==4.0  # via django-celery-beat
 django==3.1.1             # via allianceauth-updater (setup.py), django-bootstrap-form, django-celery-beat, django-esi, django-registration, django-timezone-field
 dnspython==2.0.0          # via allianceauth-updater (setup.py)
 gunicorn==20.0.4          # via allianceauth-updater (setup.py)
 idna==2.10                # via jsonschema, requests
-importlib-metadata==1.7.0  # via jsonschema, kombu
+importlib-metadata==2.0.0  # via jsonschema, kombu
 jsonpointer==2.0          # via jsonschema
 jsonref==0.2              # via bravado-core
 jsonschema[format]==3.2.0  # via bravado-core, swagger-spec-validator
@@ -68,7 +68,7 @@ urllib3==1.25.10          # via requests
 vine==5.0.0               # via amqp, celery
 wcwidth==0.2.5            # via prompt-toolkit
 webcolors==1.11.1         # via jsonschema
-zipp==3.1.0               # via importlib-metadata
+zipp==3.2.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
