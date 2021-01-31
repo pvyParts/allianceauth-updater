@@ -11,8 +11,6 @@ clean:
 	rm -rf dist/*
 
 dev:
-	pip install -U git+https://gitlab.com/aaronkable/django-esi.git@bravado_11
-	pip install -e .
 	pip install twine
 
 package:
