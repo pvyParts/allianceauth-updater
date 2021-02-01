@@ -26,7 +26,7 @@ django-esi==2.0.5         # via allianceauth-updater (setup.py)
 django-redis-cache==3.0.0  # via allianceauth-updater (setup.py)
 django-registration==3.1.1  # via allianceauth-updater (setup.py)
 django-sortedm2m==3.0.2   # via allianceauth-updater (setup.py)
-django-timezone-field==4.0  # via django-celery-beat
+django-timezone-field==4.1.1  # via django-celery-beat
 django==3.1.2             # via allianceauth-updater (setup.py), django-bootstrap-form, django-celery-beat, django-esi, django-registration, django-timezone-field
 dnspython==2.0.0          # via allianceauth-updater (setup.py)
 gunicorn==20.0.4          # via allianceauth-updater (setup.py)
