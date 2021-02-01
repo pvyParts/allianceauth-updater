@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-amqp==5.0.1               # via kombu
+amqp==5.0.5               # via kombu
 asgiref==3.3.1           # via django
 attrs==20.2.0             # via jsonschema
 bcrypt==3.2.0             # via allianceauth-updater (setup.py)
