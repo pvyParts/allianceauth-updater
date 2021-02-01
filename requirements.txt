@@ -12,7 +12,7 @@ billiard==3.6.3.0         # via celery
 bravado-core==5.17.0      # via bravado
 bravado==11.0.2           # via allianceauth-updater (setup.py), django-esi
 celery-once==3.0.1        # via allianceauth-updater (setup.py)
-celery==5.0.0          # via allianceauth-updater (setup.py), celery-once, django-celery-beat, django-esi
+celery==5.0.5          # via allianceauth-updater (setup.py), celery-once, django-celery-beat, django-esi
 certifi==2020.6.20        # via requests
 cffi==1.14.3              # via bcrypt
 chardet==3.0.4            # via requests
@@ -21,7 +21,7 @@ click-repl==0.1.6         # via celery
 click==7.1.2              # via celery, click-didyoumean, click-repl
 confusable-homoglyphs==3.2.0  # via django-registration
 django-bootstrap-form==3.4  # via allianceauth-updater (setup.py)
-django-celery-beat==2.0.0  # via allianceauth-updater (setup.py)
+django-celery-beat==2.2.0  # via allianceauth-updater (setup.py)
 django-esi==2.0.5         # via allianceauth-updater (setup.py)
 django-redis-cache==3.0.0  # via allianceauth-updater (setup.py)
 django-registration==3.1.1  # via allianceauth-updater (setup.py)
