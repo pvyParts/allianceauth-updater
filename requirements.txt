@@ -31,7 +31,7 @@ django==3.1.6             # via allianceauth-updater (setup.py), django-bootstra
 dnspython==2.0.0          # via allianceauth-updater (setup.py)
 gunicorn==20.0.4          # via allianceauth-updater (setup.py)
 idna==2.10                # via jsonschema, requests
-importlib-metadata==2.0.0  # via jsonschema, kombu
+importlib-metadata==3.4.0  # via jsonschema, kombu
 jsonpointer==2.0          # via jsonschema
 jsonref==0.2              # via bravado-core
 jsonschema[format]==3.2.0  # via bravado-core, swagger-spec-validator
