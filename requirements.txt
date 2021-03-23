@@ -68,7 +68,7 @@ urllib3==1.26.4          # via requests
 vine==5.0.0               # via amqp, celery
 wcwidth==0.2.5            # via prompt-toolkit
 webcolors==1.11.1         # via jsonschema
-zipp==3.4.0               # via importlib-metadata
+zipp==3.4.1               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
