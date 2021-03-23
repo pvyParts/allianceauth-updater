@@ -14,7 +14,7 @@ bravado==11.0.2           # via allianceauth-updater (setup.py), django-esi
 celery-once==3.0.1        # via allianceauth-updater (setup.py)
 celery==5.0.5          # via allianceauth-updater (setup.py), celery-once, django-celery-beat, django-esi
 certifi==2020.12.5        # via requests
-cffi==1.14.4              # via bcrypt
+cffi==1.14.5              # via bcrypt
 chardet==4.0.0            # via requests
 click-didyoumean==0.0.3   # via celery
 click-repl==0.1.6         # via celery
