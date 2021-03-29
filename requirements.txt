@@ -29,7 +29,7 @@ django-sortedm2m==3.0.2   # via allianceauth-updater (setup.py)
 django-timezone-field==4.1.2  # via django-celery-beat
 django==3.1.7             # via allianceauth-updater (setup.py), django-bootstrap-form, django-celery-beat, django-esi, django-registration, django-timezone-field
 dnspython==2.1.0          # via allianceauth-updater (setup.py)
-gunicorn==20.0.4          # via allianceauth-updater (setup.py)
+gunicorn==20.1.0          # via allianceauth-updater (setup.py)
 idna==3.1                # via jsonschema, requests
 importlib-metadata==3.7.3  # via jsonschema, kombu
 jsonpointer==2.1          # via jsonschema
