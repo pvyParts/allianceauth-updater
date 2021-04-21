@@ -8,7 +8,7 @@ amqp==5.0.6               # via kombu
 asgiref==3.3.1           # via django
 attrs==20.3.0             # via jsonschema
 bcrypt==3.2.0             # via allianceauth-updater (setup.py)
-billiard==3.6.3.0         # via celery
+billiard==3.6.4.0         # via celery
 bravado-core==5.17.0      # via bravado
 bravado==11.0.3           # via allianceauth-updater (setup.py), django-esi
 celery-once==3.0.1        # via allianceauth-updater (setup.py)
