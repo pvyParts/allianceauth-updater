@@ -36,7 +36,7 @@ jsonpointer==2.1          # via jsonschema
 jsonref==0.2              # via bravado-core
 jsonschema[format]==3.2.0  # via bravado-core, swagger-spec-validator
 kombu==5.0.2              # via celery
-monotonic==1.5            # via bravado
+monotonic==1.6            # via bravado
 msgpack-python==0.5.6     # via bravado
 msgpack==1.0.2            # via bravado-core
 mysqlclient==2.0.3        # via allianceauth-updater (setup.py)
