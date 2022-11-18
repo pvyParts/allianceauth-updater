@@ -49,7 +49,7 @@ pyparsing==2.4.7          # via packaging
 pyrsistent==0.17.3        # via jsonschema
 python-crontab==2.5.1     # via django-celery-beat
 python-dateutil==2.8.1    # via bravado, bravado-core, python-crontab
-python-slugify==4.0.1     # via allianceauth-updater (setup.py)
+python-slugify==7.0.0     # via allianceauth-updater (setup.py)
 pytz==2021.1              # via bravado-core, celery, django, django-timezone-field
 pyyaml==5.4.1             # via bravado, bravado-core, swagger-spec-validator
 redis==3.5.3              # via allianceauth-updater (setup.py), celery-once, django-redis-cache
