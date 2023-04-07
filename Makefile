@@ -3,21 +3,19 @@
 help:
 	@echo "This project assumes that an active Python virtualenv is present."
 	@echo "The following make targets are available:"
-	@echo "	 dev 	 install all deps for dev environment
-	@echo "  clean   remove all old packages
-	@echo "  package create pypi package zip
 
-clean:
-	rm -rf dist/*
-
-dev:
+setup:
 	pip install --upgrade pip
-	pip install wheel
-	pip install tox
-	pip install -e .
+	pip install coverage
 
 test:
-	tox
-
-package:
-	python setup.py sdist
+	pip install -r ../requirements.txt
+	echo "****************************************"
+	echo "********** Current Versions! ***********"
+	echo "****************************************"
+	pip freeze
+	echo "****************************************"
+	echo "**********   Running Tests!   **********"
+	echo "****************************************"
+	coverage run runtests.py -v 2 --debug-mode
+	coverage report -m
