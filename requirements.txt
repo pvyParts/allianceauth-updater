@@ -5,14 +5,14 @@
 #    pip-compile
 #
 amqp==5.0.6               # via kombu
-asgiref==3.3.4           # via django
+asgiref==3.3.4            # via django
 attrs==20.3.0             # via jsonschema
 bcrypt==3.2.0             # via allianceauth-updater (setup.py)
 billiard==3.6.4.0         # via celery
 bravado-core==5.17.0      # via bravado
 bravado==11.0.3           # via allianceauth-updater (setup.py), django-esi
 celery-once==3.0.1        # via allianceauth-updater (setup.py)
-celery==5.0.5          # via allianceauth-updater (setup.py), celery-once, django-celery-beat, django-esi
+celery==5.0.5             # via allianceauth-updater (setup.py), celery-once, django-celery-beat, django-esi
 certifi==2020.12.5        # via requests
 cffi==1.14.5              # via bcrypt
 chardet==4.0.0            # via requests

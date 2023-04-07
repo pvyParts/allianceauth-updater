@@ -1,53 +1,68 @@
 # This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [master]
+    branches:
+      - "**"
+    tags-ignore:
+      - "**"
   pull_request:
-    branches: [master]
-
+    branches:
+      - "**"
+    tags-ignore:
+      - "**"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  test:
+  AllianceAuth:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.7", "3.8", "3.9"]
-        # python-version: ['3.9']
+#        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        python-version: ['3.9']
+
     steps:
       - uses: actions/checkout@v2
+
       - uses: shogo82148/actions-setup-redis@v1
         with:
           redis-version: "latest"
+
       - run: redis-cli ping
-      - uses: mirromutth/mysql-action@v1.1
-        with:
-          character set server: 'utf8' # Optional, default value is 'utf8mb4'. The '--character-set-server' option for mysqld
-          collation server: 'utf8mb4' # Optional, default value is 'utf8mb4_general_ci'. The '--collation-server' option for mysqld
-          mysql version: '8.0' # Optional, default value is "latest". The version of the MySQL
-          mysql database: 'test_db' # Optional, default value is "test". The specified database which will be create
-          mysql root password: 'rootpw' # Required if "mysql user" is empty, default is empty. The root superuser password
-          mysql user: 'user' # Required if "mysql root password" is empty, default is empty. The superuser for the specified database. Can use secrets, too
-          mysql password: 'userpw' # Required if "mysql user" exists. The password for the "mysql user"
+
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: install dependencies
-        run: make dev
-      - name: Run Tests
-        run: make test
-      - name: Upload test coverage
-        if: ${{ !env.ACT }}
-        uses: actions/upload-artifact@v2.2.4
+
+      - run: npm install -g yarn
+
+      - name: Run Auth Tests
+        run: ./run_test_alliance_auth.sh
+  CorpTools:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # python-version: ["3.8", "3.9", "3.10", "3.11"]
+        python-version: ['3.9']
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: shogo82148/actions-setup-redis@v1
         with:
-          # Artifact name
-          name: Python${{ matrix.python-version }} Test Coverage
-          # A file, directory or wildcard pattern that describes what to upload
-          path: htmlcov/
+          redis-version: "latest"
+
+      - run: redis-cli ping
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - run: npm install -g yarn
+
+      - name: Run Auth Tests
+        run: ./run_test_corp_tools.sh
