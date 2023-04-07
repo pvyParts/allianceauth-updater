@@ -23,7 +23,7 @@ backports-zoneinfo==0.2.1;python_version<"3.9"
     #   django-timezone-field
 bcrypt==4.0.1
     # via allianceauth
-beautifulsoup4==4.12.1
+beautifulsoup4==4.12.2
     # via allianceauth
 billiard==3.6.4.0
     # via celery
