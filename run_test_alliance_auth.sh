@@ -1,4 +1,4 @@
 git clone https://gitlab.com/allianceauth/allianceauth.git
 cd allianceauth
-make dev
-make test
+pip install tox
+tox
