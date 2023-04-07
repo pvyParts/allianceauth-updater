@@ -8,7 +8,7 @@ setup:
 	pip install --upgrade pip
 	pip install coverage
 
-test:
+runtest:
 	pip install -r ../requirements.txt
 	echo "****************************************"
 	echo "********** Current Versions! ***********"

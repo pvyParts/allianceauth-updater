@@ -4,4 +4,4 @@ pwd
 export DJANGO_SETTINGS_MODULE="tests.test_settings"
 make setup
 pip install -e .
-make test
+make runtest
