@@ -5,7 +5,7 @@ export DJANGO_SETTINGS_MODULE="tests.settings_all"
 pip install --upgrade pip
 pip install coverage
 pip install -e ".[test]"
-pip install -r ../requirements.txt
+pip install -r ../requirements.txt --no-deps
 echo "****************************************"
 echo "********** Current Versions! ***********"
 echo "****************************************"
