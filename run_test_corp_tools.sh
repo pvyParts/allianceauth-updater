@@ -6,6 +6,12 @@ pip install --upgrade pip
 pip install coverage
 pip install -e .
 pip install -r ../requirements.txt
+echo "****************************************"
+echo "********** Current Versions! ***********"
+echo "****************************************"
 pip freeze
+echo "****************************************"
+echo "**********   Running Tests!   **********"
+echo "****************************************"
 coverage run runtests.py
 coverage report -m
