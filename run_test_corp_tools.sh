@@ -1,4 +1,8 @@
 git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools.git
 cd allianceauth-corp-tools
-make dev
-make test
+pip install --upgrade pip
+pip install coverage
+pip install ../requirements.txt
+pip freeze
+coverage run runtests.py
+coverage report -m
