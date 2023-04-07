@@ -4,7 +4,7 @@ cd allianceauth
 pwd
 export DJANGO_SETTINGS_MODULE="tests.settings_all"
 pip install --upgrade pip
-pip install coverage
+pip install coverage wheel
 pip install -e ".[test]"
 pip install -r ../requirements.txt --no-deps
 echo "****************************************"
