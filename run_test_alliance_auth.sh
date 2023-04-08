@@ -1,8 +1,9 @@
 set -e
+pip install -e .
 git clone https://gitlab.com/allianceauth/allianceauth.git
 cd allianceauth
 pwd
-export DJANGO_SETTINGS_MODULE="../tests.aa.mysql"
+export DJANGO_SETTINGS_MODULE="auth_updater.tests_aa_mysql"
 pip install --upgrade pip
 pip install coverage wheel
 pip install -e ".[test]"
