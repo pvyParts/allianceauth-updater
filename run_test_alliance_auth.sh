@@ -1,5 +1,6 @@
 set -e
 pip install -e .
+cd auth_updater
 git clone https://gitlab.com/allianceauth/allianceauth.git
 cd allianceauth
 pwd
