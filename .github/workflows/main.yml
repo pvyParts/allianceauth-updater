@@ -16,6 +16,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   AllianceAuth:
@@ -23,10 +24,16 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10", "3.11"]
+        mariadb-version: ["10.10", "10.9", "10.8"]
         # python-version: ['3.9']
 
     steps:
       - uses: actions/checkout@v2
+      - uses: ankane/setup-mariadb@v1
+        with:
+          database: testdb
+          mariadb-version: ${{ matrix.mariadb-version }}
+      - run: mysql -D alliance_auth -e 'SELECT VERSION()'
 
       - uses: shogo82148/actions-setup-redis@v1
         with:

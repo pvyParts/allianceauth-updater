@@ -6,7 +6,7 @@ help:
 
 setup:
 	pip install --upgrade pip
-	pip install coverage
+	pip install coverage wheel
 
 runtest:
 	pip install -r ../requirements.txt
