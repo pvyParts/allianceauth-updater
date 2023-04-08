@@ -8,7 +8,7 @@ export DJANGO_SETTINGS_MODULE="auth_updater.tests_aa_mysql"
 pip install --upgrade pip
 pip install coverage wheel
 pip install -e ".[test]"
-pip install -r ../requirements.txt --no-deps
+pip install -r ../../requirements.txt --no-deps
 echo "****************************************"
 echo "********** Current Versions! ***********"
 echo "****************************************"
