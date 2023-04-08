@@ -31,7 +31,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ankane/setup-mariadb@v1
         with:
-          database: testdb
+          database: alliance_auth
           mariadb-version: ${{ matrix.mariadb-version }}
       - run: mysql -D alliance_auth -e 'SELECT VERSION()'
 
