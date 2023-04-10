@@ -77,3 +77,5 @@ jobs:
         run: ./run_test_corp_tools.sh
       - name: Run Moon Tests
         run: ./run_test_corp_tools_moons.sh
+      - name: Run Invoices Tests
+        run: ./run_test_corp_tools_invoices.sh
