@@ -1,5 +1,5 @@
 set -e
-cd ..
+cd auth_updater
 git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-invoice-manager.git invoices
 cd invoices
 pwd

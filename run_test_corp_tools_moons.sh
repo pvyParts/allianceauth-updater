@@ -1,5 +1,5 @@
 set -e
-cd ..
+cd auth_updater
 git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools-moons.git moons
 cd moons
 pwd
