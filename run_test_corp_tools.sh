@@ -2,7 +2,7 @@ set -e
 pip install -e .
 cd auth_updater
 git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools.git corptools
-cd allianceauth-corp-tools
+cd corptools
 pwd
 export DJANGO_SETTINGS_MODULE="auth_updater.tests_ct_mysql"
 pip install --upgrade pip
