@@ -16,17 +16,23 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   AllianceAuth:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
-        # python-version: ['3.9']
+        python-version: ["3.9", "3.10", "3.11"]
+        mariadb-version: ["10.10"]
 
     steps:
       - uses: actions/checkout@v2
+      - uses: ankane/setup-mariadb@v1
+        with:
+          database: alliance_auth
+          mariadb-version: ${{ matrix.mariadb-version }}
+      - run: mysql -D alliance_auth -e 'SELECT VERSION()'
 
       - uses: shogo82148/actions-setup-redis@v1
         with:
@@ -46,12 +52,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
-        #python-version: ['3.9']
-
+        python-version: ["3.9", "3.10", "3.11"]
+        mariadb-version: ["10.10"]
     steps:
       - uses: actions/checkout@v2
-
+      - uses: ankane/setup-mariadb@v1
+        with:
+          database: alliance_auth
+          mariadb-version: ${{ matrix.mariadb-version }}
+      - run: mysql -D alliance_auth -e 'SELECT VERSION()'
       - uses: shogo82148/actions-setup-redis@v1
         with:
           redis-version: "latest"
@@ -64,5 +73,9 @@ jobs:
 
       - run: npm install -g yarn
 
-      - name: Run Auth Tests
+      - name: Run Core Tests
         run: ./run_test_corp_tools.sh
+      - name: Run Moon Tests
+        run: ./run_test_corp_tools_moons.sh
+      - name: Run Invoices Tests
+        run: ./run_test_corp_tools_invoices.sh
