@@ -1,4 +1,4 @@
-from .allianceauth.tests.settings_all import *
+from .moons.tests.test_settings import *
 
 DATABASES['default'] = {
     'ENGINE': 'django.db.backends.mysql',
