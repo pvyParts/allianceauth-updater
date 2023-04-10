@@ -1,4 +1,6 @@
 set -e
+pip install -e .
+cd auth_updater
 git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools.git
 cd allianceauth-corp-tools
 pwd
@@ -6,7 +8,7 @@ export DJANGO_SETTINGS_MODULE="tests.test_settings"
 pip install --upgrade pip
 pip install coverage wheel
 pip install -e .
-pip install -r ../requirements.txt --no-deps
+pip install -r ../../requirements.txt --no-deps
 echo "****************************************"
 echo "********** Current Versions! ***********"
 echo "****************************************"

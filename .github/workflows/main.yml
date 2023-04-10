@@ -23,9 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        python-version: ["3.9", "3.10", "3.11"]
         mariadb-version: ["10.10", "10.9", "10.8"]
-        # python-version: ['3.9']
 
     steps:
       - uses: actions/checkout@v2
@@ -53,12 +52,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
-        #python-version: ['3.9']
-
+        python-version: ["3.9", "3.10", "3.11"]
+        mariadb-version: ["10.10", "10.9", "10.8"]
     steps:
       - uses: actions/checkout@v2
-
+      - uses: ankane/setup-mariadb@v1
+        with:
+          database: alliance_auth
+          mariadb-version: ${{ matrix.mariadb-version }}
+      - run: mysql -D alliance_auth -e 'SELECT VERSION()'
       - uses: shogo82148/actions-setup-redis@v1
         with:
           redis-version: "latest"
