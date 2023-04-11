@@ -54,7 +54,7 @@ jobs:
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
         mariadb-version: ["10.10"]
-    steps:3
+    steps:
       - uses: ankane/setup-mariadb@v1
         with:
           database: alliance_auth
