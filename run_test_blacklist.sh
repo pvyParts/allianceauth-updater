@@ -1,9 +1,9 @@
 set -e
 cd auth_updater
-git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-secure-groups.git secgroups
-cd secgroups
+git clone https://github.com/Solar-Helix-Independent-Transport/allianceauth-blacklist.git blacklist
+cd blacklist
 pwd
-export DJANGO_SETTINGS_MODULE="auth_updater.tests_sg_mysql"
+export DJANGO_SETTINGS_MODULE="auth_updater.tests_bl_mysql"
 pip install --upgrade pip
 pip install coverage wheel
 pip install -e .

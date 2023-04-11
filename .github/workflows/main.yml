@@ -106,3 +106,30 @@ jobs:
 
       - name: Run Secure Groups Tests
         run: ./run_test_secure_groups.sh
+  Blacklist:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
+        mariadb-version: ["10.10"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ankane/setup-mariadb@v1
+        with:
+          database: alliance_auth
+          mariadb-version: ${{ matrix.mariadb-version }}
+      - run: mysql -D alliance_auth -e 'SELECT VERSION()'
+      - uses: shogo82148/actions-setup-redis@v1
+        with:
+          redis-version: "latest"
+
+      - run: redis-cli ping
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - run: npm install -g yarn
+
+      - name: Run Blacklist Tests
+        run: ./run_test_blacklist.sh
