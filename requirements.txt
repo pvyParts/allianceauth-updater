@@ -124,7 +124,7 @@ oauthlib==3.2.2
     # via requests-oauthlib
 openfire-restapi==0.2.0
     # via allianceauth
-packaging==23.0
+packaging==23.1
     # via allianceauth
 passlib==1.7.4
     # via allianceauth
