@@ -209,7 +209,7 @@ six==1.16.0
     #   python-dateutil
 slixmpp==1.8.3
     # via allianceauth
-soupsieve==2.4
+soupsieve==2.4.1
     # via beautifulsoup4
 sqlparse==0.4.3
     # via django
