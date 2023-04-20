@@ -136,7 +136,7 @@ pyasn1==0.4.8
     #   python-jose
     #   rsa
     #   slixmpp
-pyasn1-modules==0.2.8
+pyasn1-modules==0.3.0
     # via slixmpp
 pycares==4.3.0
     # via aiodns
