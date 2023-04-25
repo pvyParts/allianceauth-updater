@@ -6,7 +6,7 @@
 #
 aiodns==3.0.0
     # via slixmpp
-allianceauth==3.3.0
+allianceauth==3.4.0
     # via allianceauth-corptools (allianceauth-corp-tools/setup.py)
 amqp==5.1.1
     # via kombu
