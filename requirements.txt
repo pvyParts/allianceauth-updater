@@ -6,8 +6,8 @@
 #
 aiodns==3.0.0
     # via slixmpp
-allianceauth==3.4.0
-    # via allianceauth-corptools (allianceauth-corp-tools/setup.py)
+allianceauth @ git+https://gitlab.com/soratidus999/allianceauth.git@v4-bumps 
+    # Core Package 
 amqp==5.1.1
     # via kombu
 asgiref==3.6.0
@@ -61,7 +61,7 @@ confusable-homoglyphs==3.2.0
     # via django-registration
 cron-descriptor==1.2.35
     # via django-celery-beat
-django==4.0.10
+django==4.2.1
     # via
     #   allianceauth
     #   django-bootstrap-form
