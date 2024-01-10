@@ -75,7 +75,7 @@ django-bootstrap-form==3.4
     # via allianceauth
 django-celery-beat==2.5.0
     # via allianceauth
-django-esi==4.0.1
+django-esi==5.1.0
     # via
     #   allianceauth
     #   allianceauth-corptools (allianceauth-corp-tools/setup.py)
