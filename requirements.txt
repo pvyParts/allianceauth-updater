@@ -29,7 +29,7 @@ billiard==4.1.0
     # via celery
 bravado==10.6.3
     # via django-esi
-bravado-core==5.17.1
+bravado-core==6.1.0
     # via bravado
 celery==5.2.7
     # via
