@@ -1,7 +1,7 @@
 set -e
 pip install -e .
 cd auth_updater
-git clone //gitlab.com/allianceauth/allianceauth.git
+git clone https://gitlab.com/allianceauth/allianceauth.git
 cd allianceauth
 pwd
 export DJANGO_SETTINGS_MODULE="auth_updater.tests_aa_mysql"
